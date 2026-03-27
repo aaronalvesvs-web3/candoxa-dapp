@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+* {
+  transition:;
+  /* background-color 300ms ease-in-out,
+    color 300ms ease-in-out,
+    border-color 300ms ease-in-out; */
+}
+
+@theme {
+  --color-dark-blue: var(--dark-blue);
+  --color-blue-primary: var(--blue-primary);
+  --color-light-blue: var(--light-blue);
+  --color-lavender-blue: var(--lavender-blue);
+
+  --color-hover: var(--hover);
+
+  --font-sans: var(--font-poppins);
+  --font-sherika: var(--font-sherika);
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --dark-blue: #0b1550;
+  --blue-primary: #0038ff;
+  --light-blue: #356ee6;
+  --lavender-blue: #b2bfff;
+
+  /*--hover: #3f21ff1f;*/
+}
+
+.dark {
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1.5s ease-in-out forwards;
+}
+
+.animate-fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+}
