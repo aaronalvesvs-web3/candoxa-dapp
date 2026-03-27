@@ -55,7 +55,7 @@ Candoxa is a Web3 platform where creators collect their best work from across th
 ## 5. Installation
 ### 5.1. Clone the Repository
 ```sh
-git clone https://github.com/Join-Candoxa/candoxa-dapp.git
+git clone https://github.com/aaronalvesvs-web3/candoxa-dapp
 ```
 
 ### 5.2. Access the Project Directory
